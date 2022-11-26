@@ -1,0 +1,278 @@
+main {
+  width: 80%;
+  margin: 50px 150px;
+}
+main .text {
+  text-align: center;
+}
+main .text h1 {
+  font-size: 3.5em;
+  margin: 40px 0px;
+  background: rgb(184, 63, 88);
+  background: linear-gradient(90deg, rgb(184, 63, 88) 4%, rgb(190, 71, 92) 17%, rgb(255, 159, 132) 56%, rgb(189, 76, 175) 100%);
+  font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main .text p {
+  text-align: start;
+  font-size: 1.3em;
+  color: #1B263B;
+}
+main .mainProyects h2 {
+  font-size: 2.2em;
+}
+main .mainProyects .worksGrid {
+  margin-top: 40px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .mainProyects .worksGrid .work {
+  display: block;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+main .mainProyects .worksGrid .work h3 {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+main .mainProyects .worksGrid .work a i {
+  color: #1B263B;
+  font-size: 1.8em;
+}
+main .mainProyects .worksGrid .work p {
+  font-size: 1.1em;
+  width: 90%;
+}
+
+.footer {
+  background-color: rgba(28, 29, 37, 0.9843137255);
+  padding: 80px 0px 50px 0px;
+  position: relative;
+  text-align: center;
+}
+.footer svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  cursor: pointer;
+}
+.footer li {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-right: 10px;
+}
+.footer li a {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 800;
+}
+.footer li a:hover {
+  border-bottom: 1px solid #fff;
+}
+.footer h6 {
+  margin-top: 40px;
+  color: #fff;
+}
+
+.contenedor-padre {
+  overflow: hidden;
+  position: relative;
+}
+
+.contenedor {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@-webkit-keyframes up {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes up {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.contenedor .about h3 {
+  font-size: 8em;
+  color: rgba(159, 160, 175, 0.3568627451);
+  position: absolute;
+  left: 10px;
+  opacity: 0.8;
+  top: 50px;
+}
+.contenedor .about-container {
+  background-color: hsla(0deg, 0%, 95%, 0.97);
+  width: 100%;
+  border: 1px solid #000;
+  padding: 25px;
+  position: relative;
+  -webkit-animation: up 0.4s;
+          animation: up 0.4s;
+}
+.contenedor .about-container h6 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(65, 71, 100, 0.9843137255);
+}
+.contenedor .about-container .skills {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.contenedor .about-container .skills i {
+  font-size: 40px;
+  margin: 30px;
+  z-index: 3;
+  text-align: center;
+}
+.contenedor .about-container .skills i span {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  display: block;
+  font-family: montserrat;
+  color: #1f1f1f;
+}
+.contenedor .about-container .skills i:nth-child(1):hover {
+  color: rgb(0, 162, 255);
+}
+.contenedor .about-container .skills i:nth-child(2):hover {
+  color: orange;
+}
+.contenedor .about-container .skills i:nth-child(3):hover {
+  color: orangered;
+}
+.contenedor .about-container .skills i:nth-child(4):hover {
+  color: rgb(255, 0, 106);
+}
+.contenedor .about-container .skills i:nth-child(5):hover {
+  color: rgb(0, 255, 85);
+}
+.contenedor .about-container .skills i:nth-child(6):hover {
+  color: rgba(38, 41, 56, 0.9843137255);
+}
+.contenedor .about-container .about-content {
+  margin-top: 15px;
+}
+.contenedor .about-container .about-content h4 {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(28, 29, 37, 0.9843137255);
+}
+.contenedor .about-container .about-content h5 {
+  color: rgb(61, 90, 253);
+  font-weight: 300;
+  font-size: 18px;
+  margin: 20px 0px;
+}
+.contenedor .about-container .about-content p {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgba(28, 29, 37, 0.9843137255);
+}
+.contenedor .about-container .about-content span {
+  color: orangered;
+  font-weight: 800;
+  font-size: 20px;
+}
+.contenedor .contact-container {
+  background-color: rgba(28, 29, 37, 0.9843137255);
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding: 20px;
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+  -webkit-animation: up 0.4s;
+          animation: up 0.4s;
+}
+.contenedor .contact-container .textfondo {
+  color: rgba(176, 178, 195, 0.3568627451);
+  font-size: 8em;
+  position: absolute;
+  bottom: 100px;
+  z-index: -1;
+  opacity: 0.1;
+}
+.contenedor .contact-container h3 {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.contenedor .contact-container p {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contenedor .contact-container .contact-wrapper > * {
+  padding: 1em;
+  z-index: 2;
+}
+.contenedor .contact-container .contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  z-index: 2;
+}
+.contenedor .contact-container .contact-form form label {
+  display: block;
+}
+.contenedor .contact-container .contact-form form p {
+  margin: 0;
+  padding: 0.7em;
+}
+.contenedor .contact-container .contact-form form .block {
+  grid-column: 1/3;
+}
+.contenedor .contact-container .contact-form form button,
+.contenedor .contact-container .contact-form form input,
+.contenedor .contact-container .contact-form form textarea {
+  width: 100%;
+  padding: 0.3em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  z-index: 2;
+  max-width: 400px;
+  color: #fff;
+  font-size: 1em;
+}
+.contenedor .contact-container .contact-form form button {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 81, 122) 70%, rgb(110, 230, 255) 100%);
+  border: 0;
+  text-transform: uppercase;
+  padding: 10px;
+  z-index: 2;
+  cursor: pointer;
+  font-size: 1em;
+}
+.contenedor .contact-container .contact-form form button:hover,
+.contenedor .contact-container .contact-form form button:focus {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(255, 81, 122) 70%, rgb(110, 230, 255) 100%);
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}/*# sourceMappingURL=index.css.map */

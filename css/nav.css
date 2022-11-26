@@ -1,0 +1,29 @@
+.navbar {
+  margin: 40px 500px;
+  display: flex;
+}
+.navbar ul {
+  margin: 0px -100px;
+}
+.navbar ul:nth-child(2) {
+  display: flex;
+}
+.navbar ul:nth-child(2) li {
+  margin: 0px 10px;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+.navbar ul:nth-child(2) li a {
+  color: #3c3c6e;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.navbar ul:nth-child(2) li.active {
+  background-color: rgba(190, 228, 243, 0.2039215686);
+}
+.navbar ul:nth-child(2) li.active a {
+  color: #21213b;
+}
+.navbar svg {
+  width: 20%;
+}/*# sourceMappingURL=nav.css.map */

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>App de notas</title>
+	<!-- SEO Y METAS  -->
+    <meta name="description" content="Hola soy Tiago Ocampo un desarrolador web y este es mi portafolio donde puedes averiguar y contactar conmigo.">
+    <meta name="keywords" content="desarrolador web,programador,webdev">
+    <meta property=”og:type” content=”website” />
+    <meta property="og:description" content="Mi portafolio donde puedes contactarme y hacer un proyecto juntos!">
+	<!-- CSS Import -->
+	<link rel="stylesheet" href="css/notes.css" />
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/index.css">
+	<!-- End of CSS Import -->
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+	<!-- End of Fonts -->
+</head>
+<body>	
+	<!-- NAVBAR  -->
+	<nav class="navbar">
+		<ul>
+			<li>
+				<a href="">
+				<svg viewBox="0 0 156 150" focusable="false" class="chakra-icon css-1sb3np2"><path fill="#26264e" d="M54.5 28.1c-5.8 1.4-6.4 2.7-.7 1.6 4.3-.9 5.5-.7 9.6 1.2 9 4.4 9.2 2.9-4.7 36.2-15 35.6-15 35.7-19 37.4-3 1.4-2.7 1.4 5.8 1.4 6.6 0 8.5-.2 7.3-1-2.6-1.5-2.2-4.5 1.8-15.3l3.7-9.6h29.2l3 8.7c8.7 26.1 21.6 40.4 36 40.2 6.8-.1 10.8-1.7 4.5-1.9-8.7-.1-16-5.4-23.3-17.1-4.6-7.2-7.1-13.2-16.8-40.6-9.1-25.7-12.7-33.2-17.8-37.4-5.6-4.6-10.7-5.6-18.6-3.8zm25.9 31.2C83.5 68 86 75.5 86 76c0 .6-5.5 1-13.1 1-12.1 0-13.1-.1-12.5-1.8 6.9-18.4 13.1-33.1 13.7-32.5.4.4 3.2 7.9 6.3 16.6z"></path></svg>
+				</a>
+			</li>
+		</ul>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li class="active"><a href="task.html">Actividades</a></li>
+			<li><a href="contact.html">Contacto</a></li>
+		</ul>
+	</nav>
+	<!-- END NAVBAR  -->
+
+	<!-- App Wrapper -->
+	<main class="app">
+		<!-- Greeting -->
+		<section class="greeting">
+			<h2 class="title">
+				Que cuentas? <input type="text" id="name" placeholder="Ingresa tu nombre" />
+			</h2>
+		</section>
+		<!-- End of Greeting -->
+		
+		<!-- New Todo -->
+		<section class="create-todo">
+			<h3>Crea una actividad</h3>
+			<form id="new-todo-form">
+				<h4>Que hay para contar?</h4>
+				<input 
+					type="text" 
+					placeholder="Agrega una actividad"
+					name="content"
+					id="content" />
+				
+				<h4>Selecciona una categoria</h4>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="business" /> 
+						<span class="bubble business"></span>
+						<div>Negocios</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="personal" />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Añadir" />
+			</form>
+		</section>
+		<!-- End of New Todo -->
+
+		<!-- Todo List -->
+		<section class="todo-list">
+			<h3>ACTIVIDADES LISTA</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+		<!-- End of Todo List -->
+
+	</main>
+	<!-- End of App Wrapper -->
+
+	<!-- FOOTER INIT -->
+    <footer class="footer">
+        <a href="index.html">
+            <svg viewBox="0 0 156 150" focusable="false" class="chakra-icon css-1sb3np2"><path fill="#fff" d="M54.5 28.1c-5.8 1.4-6.4 2.7-.7 1.6 4.3-.9 5.5-.7 9.6 1.2 9 4.4 9.2 2.9-4.7 36.2-15 35.6-15 35.7-19 37.4-3 1.4-2.7 1.4 5.8 1.4 6.6 0 8.5-.2 7.3-1-2.6-1.5-2.2-4.5 1.8-15.3l3.7-9.6h29.2l3 8.7c8.7 26.1 21.6 40.4 36 40.2 6.8-.1 10.8-1.7 4.5-1.9-8.7-.1-16-5.4-23.3-17.1-4.6-7.2-7.1-13.2-16.8-40.6-9.1-25.7-12.7-33.2-17.8-37.4-5.6-4.6-10.7-5.6-18.6-3.8zm25.9 31.2C83.5 68 86 75.5 86 76c0 .6-5.5 1-13.1 1-12.1 0-13.1-.1-12.5-1.8 6.9-18.4 13.1-33.1 13.7-32.5.4.4 3.2 7.9 6.3 16.6z"></path></svg>
+        </a>
+        <li>
+            <a target="_blank" href="https://www.linkedin.com/in/tiago-ocampo-ferreira-884658255/">Linkedin</a>
+        </li>
+        <li>
+            <a target="_blank" href="https://github.com/tiagoOcampodev">Github</a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.instagram.com/tiago0campo/">Instagram</a>
+        </li>
+        <h6>Pagina hecha sin fines de lucro <br> -Tiago Ocampo 2022º-</h6>
+    </footer>
+    <!-- FOOTER END  -->
+	
+	<!-- JS Import -->
+	<script src="js/notes.js"></script>
+	<!-- End of JS Import -->
+</body>
+</html>
